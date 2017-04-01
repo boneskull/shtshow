@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.2)
-project(thermoskull-sht)
+project(shtshow)
 
 include(CMakeListsPrivate.txt)
 
