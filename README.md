@@ -1,4 +1,6 @@
-# shtshow
+# shtshow 
+
+![build status]()https://travis-ci.org/boneskull/shtshow.svg?branch=master)
 
 > Temperature & humidity sensor Thing using [ESP8266] + [MQTT] + [SHT30].  Built with [PlatformIO] and [Homie]
 
