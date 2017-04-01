@@ -1,0 +1,12 @@
+.pioenvs/
+CMakeListsPrivate.txt
+.clang_complete
+.gcc-flags.json
+.piolibdeps/
+cmake-build-debug/
+data/
+lib/
+.pioenvs
+.piolibdeps
+node_modules
+data_*/

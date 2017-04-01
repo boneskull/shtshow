@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mqtt": "^2.5.0"
+  },
+  "private": true
+}
