@@ -8,7 +8,9 @@
 
 I'm using a [Wemos D1 Mini] and a [SHT30 Shield].  Any ESP8266 and any SHT3x *should* work.
 
-> *Note*: Wemos' SHT30 has a I2C address of `0x45`, whereas the factory setting is `0x44`.  You can change this value in the source if not using the shield.
+> *Note*: Wemos' SHT30 has a I2C address of `0x45`, whereas the factory setting is `0x44`.  If you have the shield and need to use `0x45`, solder these two pads together:
+
+> ![where to solder](https://cldup.com/hil-dIXkE5.png)
 
 ## Installation
 
