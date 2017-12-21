@@ -29,7 +29,7 @@ You probably want to be using a [dual base](https://www.wemos.cc/product/dual-ba
 - This firmware uses [ClosedCube's library](https://github.com/closedcube/ClosedCube_SHT31D_Arduino) instead.
 - For the D1 Mini, I had best results with `WAKE_RF_DEFAULT` when entering deep sleep.
 - Likewise, I'm not sure clock stretching works very well on an ESP8266, so we're using the SHT30's "periodic" mode.
-
+ 
 ## License
 
 Copyright 2017 [Christopher Hiller].  Licensed MIT.
