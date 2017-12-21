@@ -21,7 +21,7 @@ You probably want to be using a [dual base](https://www.wemos.cc/product/dual-ba
 1. Clone repo
 1. Use PlatformIO to flash device
 1. Optionally, create `data/homie/config.json` and use PlatformIO to upload to SPIFFS
-1. Follow [Homie's setup instructions](http://marvinroger.github.io/homie-esp8266/docs/stable/2.-Getting-started/) 
+1. Follow [Homie's setup instructions](https://marvinroger.github.io/homie-esp8266/docs/develop/quickstart/getting-started/)
 
 ## Notes
 
