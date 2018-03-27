@@ -1,4 +1,4 @@
-# shtshow 
+# shtshow
 
 ![build status](https://travis-ci.org/boneskull/shtshow.svg?branch=master)
 
@@ -11,10 +11,18 @@ I'm using a [Wemos D1 Mini] and a [SHT30 Shield].  Any ESP8266 and any SHT3x *sh
 You probably want to be using a [dual base](https://www.wemos.cc/product/dual-base.html) to avoid heat interference from the ESP8266 itself. 
 
 > *Note*: Wemos' SHT30 has a I2C address of `0x45`, whereas the factory setting is `0x44`.  If you have the shield and need to use `0x45`, solder these two pads together:
-
+>
 > ![where to solder](https://cldup.com/hil-dIXkE5.png)
 
-## Installation
+## Installation (From Binary)
+
+1. Wire up hardware
+1. Download the appropriate firmware for your D1 Mini board from the [latest release](https://github.com/boneskull/shtshow/releases)
+1. Open the archive
+1. Use [esptool](https://github.com/espressif/esptool) to flash your board with the firmware
+1. Follow [Homie's setup instructions](https://marvinroger.github.io/homie-esp8266/docs/develop/quickstart/getting-started/)
+
+## Installation (From Source)
 
 1. Wire up hardware
 1. Get [PlatformIO]
@@ -27,9 +35,9 @@ You probably want to be using a [dual base](https://www.wemos.cc/product/dual-ba
 
 - [Wemos' provided library](https://github.com/wemos/WEMOS_SHT3x_Arduino_Library) is hinky and **not recommended**.
 - This firmware uses [ClosedCube's library](https://github.com/closedcube/ClosedCube_SHT31D_Arduino) instead.
-- For the D1 Mini, I had best results with `WAKE_RF_DEFAULT` when entering deep sleep.
+- For the D1 Mini, I had best results with `WAKE_RF_DEFAULT` when entering deep sleep. YMMV.
 - Likewise, I'm not sure clock stretching works very well on an ESP8266, so we're using the SHT30's "periodic" mode.
- 
+
 ## License
 
 Copyright 2017 [Christopher Hiller].  Licensed MIT.
