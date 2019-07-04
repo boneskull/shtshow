@@ -138,7 +138,7 @@ void setup() {
   Wire.begin();
   sht30.begin(I2C_ADDRESS);
 
-  Homie_setFirmware("shtshow", "0.2.0");
+  Homie_setFirmware("shtshow", "0.3.0");
 
   // these two handlers start "doing actual stuff" if Homie boots in "normal"
   // mode, which is why the stuff they do is not in this function.
