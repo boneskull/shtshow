@@ -13,9 +13,11 @@ This project _specifically_ uses:
 
 You probably want to be using a [dual base] to avoid heat interference from the ESP8266 itself.
 
-> _Note_: Wemos' SHT30 v1.0.0 has a I2C address of `0x45`, whereas the factory setting is `0x44`. If you have the shield and need to use `0x45`, solder these two pads together:
+> _Note_: Wemos' SHT30 v1.0.0 has a I2C address of `0x45`, whereas the factory setting of the SHT30 is `0x44`. If you have the shield and need to use `0x44`, solder these two pads together:
 >
 > ![where to solder](https://cldup.com/hil-dIXkE5.png)
+>
+> I **did not** do this.
 
 This firmware _should_ work with any D1 Mini. The D1 Mini Pro has 16MB of flash, which is more than you need to run this.
 
