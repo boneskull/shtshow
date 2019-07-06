@@ -121,10 +121,10 @@ void publishStates() {
     Homie.getLogger() << "temp: " << temp << ", humidity: " << rh << endl;
 
     tempNode.setProperty("unit").send(useFahrenheit ? "F" : "C");
-    tempNode.setProperty("degrees").send(String(temp));
+    tempNode.setProperty("value").send(String(temp));
 
     humidityNode.setProperty("unit").send("RH");
-    humidityNode.setProperty("percentage").send(String(rh));
+    humidityNode.setProperty("value").send(String(rh));
   } else {
     Homie.getLogger() << "SHT3XD error: " << result.error << endl;
   }
@@ -152,9 +152,9 @@ void setup() {
   fahrenheitSetting.setDefaultValue(DEFAULT_FAHRENHEIT_FLAG);
 
   humidityNode.advertise("unit");
-  humidityNode.advertise("percentage");
+  humidityNode.advertise("value");
   tempNode.advertise("unit");
-  tempNode.advertise("degrees");
+  tempNode.advertise("value");
   Homie.setup();
 
   publishTimerId = homieLoopTimer.setInterval(5000, publishStates);
