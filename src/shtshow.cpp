@@ -8,6 +8,8 @@
 extern "C" {
 #include "user_interface.h"  // Required for wifi_station_connect() to work
 }
+
+#define VERSION "1.0.0"
 #define DEFAULT_INTERVAL 60000  // ms
 #define DEFAULT_FAHRENHEIT_FLAG true
 #define I2C_ADDRESS 0x45
@@ -138,7 +140,7 @@ void setup() {
   Wire.begin();
   sht30.begin(I2C_ADDRESS);
 
-  Homie_setFirmware("shtshow", "0.3.0");
+  Homie_setFirmware("shtshow", VERSION);
 
   // these two handlers start "doing actual stuff" if Homie boots in "normal"
   // mode, which is why the stuff they do is not in this function.
